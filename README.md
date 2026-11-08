@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <a href="https://nulldev.info/blog/karlo_kajba_simanic"><img src="https://img.shields.io/badge/blog-nulldev.info-0d1117?style=for-the-badge&logo=rss&logoColor=ff7b72" alt="Blog"/></a>
+  <a href="https://karloks.com"><img src="https://img.shields.io/badge/about-karloks.com-0d1117?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmY3YjcyIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PGNpcmNsZSBjeD0iMTIiIGN5PSI4IiByPSI0Ii8+PHBhdGggZD0iTTQgMjFjMC00IDMuNi03IDgtN3M4IDMgOCA3Ii8+PC9zdmc+" alt="About – karloks.com"/></a>
   <a href="mailto:karlo.kajba-simanic@fer.unizg.hr"><img src="https://img.shields.io/badge/mail-contact-0d1117?style=for-the-badge&logo=minutemailer&logoColor=ff7b72" alt="Email"/></a>
   <img src="https://komarev.com/ghpvc/?username=karloks2005&style=for-the-badge&color=0d1117&label=visitors" alt="Profile views"/>
 </p>
