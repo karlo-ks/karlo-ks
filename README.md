@@ -92,7 +92,7 @@ off_duty:  reading about space (or still coding)
 
 ---
 
-<p align="center"><code>"Code is like humor. When you have to explain it, it's bad." — Cory House</code></p>
+<p align="center"><code>"How do we maintain power, forever, over entities that will eventually become more powerful than us?" — Stuart Russell</code></p>
 
 <p align="center">
   <img src="./assets/space-footer.svg" alt="Thanks for visiting – see you among the stars" width="100%"/>
