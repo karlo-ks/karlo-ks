@@ -2,8 +2,9 @@
   {
     "repo": "infradeck",
     "title": "Infradeck",
-    "description": "Self-hosted infrastructure monitoring with collectors, alerts and an AI incident agent.",
-    "note": "in development"
+    "description": "Self-hosted dashboard for monitoring homelab machines, containers and uptime.",
+    "note": "in development",
+    "logo": "assets/logos/infradeck.svg"
   },
   {
     "repo": "jailbreaklab",

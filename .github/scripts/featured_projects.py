@@ -33,6 +33,8 @@ import re
 import textwrap
 import urllib.request
 
+from stars import STAR_CSS, starfield
+
 BG, FG, DIM, LINE = "#05070a", "#e6edf3", "#7d8590", "#30363d"
 ACC = "#ff7b72"
 MONO = "'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace"
@@ -113,22 +115,23 @@ def card(repo: dict, description: str | None, note: str | None = None, soon: boo
     if logo:
         lx, ly = W - 66, 66
         deco = (f'<circle cx="{lx}" cy="{ly}" r="28" fill="none" stroke="{LINE}"/>'
-                f'<circle class="tw" cx="{lx+26}" cy="{ly-12}" r="1.6" fill="{FG}"/>'
-                f'<circle cx="{lx-34}" cy="{ly+22}" r=".9" fill="{FG}" opacity=".5"/>'
                 + logo_svg(logo, lx - 15, ly - 15, 30))
     else:
-        deco = (f'<circle cx="{W-34}" cy="58" r="1.1" fill="{FG}" opacity=".6"/>'
-                f'<circle class="tw" cx="{W-58}" cy="74" r="1.4" fill="{FG}"/>'
-                f'<circle cx="{W-24}" cy="88" r=".8" fill="{FG}" opacity=".4"/>')
+        deco = ""
+    text_right = 24 + 8.4 * max([len(l) for l in lines] + [0]) + 10
+    keep = [(16, 50, 24 + 12.6 * (len(title) + 2) + 10, 82), (16, 84, text_right, 84 + 19 * len(lines) + 4),
+            (16, H - 40, W - 16, H)]
+    if logo:
+        keep.append((W - 102, 32, W - 28, 102))
+    sky = starfield(W, H, 26, sum(map(ord, name)), y0=36, keep_out=keep)
     desc_svg = "".join(
         f'<text x="24" y="{100 + i*19}" font-size="13" fill="{DIM}">{e(l)}</text>' for i, l in enumerate(lines))
     return f'''<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{e(name)}: {e(desc)}">
   <style>
     text {{ font-family: {MONO}; }}
+    {STAR_CSS}
     .in {{ animation: in .9s ease-out .2s both; }}
     @keyframes in {{ from {{ opacity: 0 }} to {{ opacity: 1 }} }}
-    .tw {{ animation: tw 4s ease-in-out infinite; }}
-    @keyframes tw {{ 0%,100% {{ opacity: .9 }} 50% {{ opacity: .2 }} }}
     @media (prefers-reduced-motion: reduce) {{ * {{ animation: none !important; }} }}
   </style>
   <rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="10" fill="{BG}" stroke="{LINE}"/>
@@ -136,6 +139,7 @@ def card(repo: dict, description: str | None, note: str | None = None, soon: boo
   <circle cx="18" cy="15" r="4.5" fill="none" stroke="{DIM}"/><circle cx="34" cy="15" r="4.5" fill="none" stroke="{DIM}"/><circle cx="50" cy="15" r="4.5" fill="none" stroke="{DIM}"/>
   <text x="{W/2}" y="19" text-anchor="middle" font-size="11" fill="{DIM}">~/projects/{e(title)}</text>
   {note_svg}
+  {sky}
   {deco}
   <g class="in">
     <text x="24" y="74" font-size="21" font-weight="700"><tspan fill="{ACC}">❯ </tspan><tspan fill="{FG}">{e(title)}</tspan></text>

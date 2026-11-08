@@ -16,6 +16,8 @@ import json
 import os
 import urllib.request
 
+from stars import STAR_CSS, starfield
+
 BG, FG, DIM, LINE, ACC = "#05070a", "#e6edf3", "#7d8590", "#30363d", "#7ee787"
 MONO = "'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace"
 LEVELS = {"NONE": 0, "FIRST_QUARTILE": 1, "SECOND_QUARTILE": 2, "THIRD_QUARTILE": 3, "FOURTH_QUARTILE": 4}
@@ -109,7 +111,7 @@ def render(days, user):
             s = f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{rad}" fill="{FG}" opacity="{op}">{tip}</circle>'
         else:
             delay = (c * 7 + r) % 9 * 0.45
-            s = (f'<g class="tw" style="animation-delay:{delay:.2f}s">'
+            s = (f'<g class="hot" style="animation-delay:{delay:.2f}s">'
                  f'<circle cx="{x:.1f}" cy="{y:.1f}" r="7" fill="{ACC}" opacity=".12"/>'
                  f'<path d="M{x-6:.1f} {y:.1f}H{x+6:.1f}M{x:.1f} {y-6:.1f}V{y+6:.1f}" stroke="{ACC}" stroke-width=".8" opacity=".7"/>'
                  f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3.2" fill="{ACC}">{tip}</circle></g>')
@@ -143,19 +145,23 @@ def render(days, user):
     .col { animation: in .6s ease-out both; }
     .c { animation: in 1s ease-out both; }
     @keyframes in { from { opacity: 0 } to { opacity: 1 } }
-    .tw { animation: tw 4s ease-in-out infinite; }
-    @keyframes tw { 0%%,100%% { opacity: 1 } 50%% { opacity: .35 } }
+    .hot { animation: hot 4s ease-in-out infinite; }
+    @keyframes hot { 0%%,100%% { opacity: 1 } 50%% { opacity: .35 } }
     .cursor { animation: blink 1.1s step-end infinite; }
     @keyframes blink { 50%% { opacity: 0 } }
     @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
-    """ % MONO
+    """ % MONO + STAR_CSS
 
+    grid = (gx - 34, gy - 34, gx + (ncols - 1) * pitch + 10, gy + 6 * vpitch + 10)
+    sky = starfield(W, H, 70, 17, keep_out=[grid, (30, 46, 560, 74), (W - 480, 48, W - 30, 74),
+                                            (30, H - 38, 260, H), (W - 285, H - 42, W - 30, H)])
     return f'''<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{user}: {total} contributions in the last year as a star map">
   <style>{style}</style>
   <rect x=".5" y=".5" width="{W-1}" height="{H-1}" rx="10" fill="{BG}" stroke="{LINE}"/>
   <line x1="0" y1="34" x2="{W}" y2="34" stroke="{LINE}"/>
   <circle cx="22" cy="17" r="5" fill="none" stroke="{DIM}"/><circle cx="40" cy="17" r="5" fill="none" stroke="{DIM}"/><circle cx="58" cy="17" r="5" fill="none" stroke="{DIM}"/>
   <text x="{W/2}" y="22" text-anchor="middle" font-size="12" fill="{DIM}">{user}@github: ~/contributions</text>
+  {sky}
   <text x="40" y="66" font-size="14"><tspan fill="{ACC}">$</tspan><tspan fill="{FG}"> git log --since="1 year ago" | starmap</tspan></text>
   <text x="{W-40}" y="66" font-size="12" fill="{DIM}" text-anchor="end">{total} contributions  ·  longest streak {longest}d  ·  current {current}d</text>
   {"".join(months)}
