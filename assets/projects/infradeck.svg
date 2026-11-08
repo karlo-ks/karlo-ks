@@ -1,10 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="580" height="170" viewBox="0 0 580 170" role="img" aria-label="Infradeck: Self-hosted infrastructure monitoring with collectors, alerts and an AI incident agent.">
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="580" height="170" viewBox="0 0 580 170" role="img" aria-label="Infradeck: Self-hosted dashboard for monitoring homelab machines, containers and uptime.">
   <style>
     text { font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
+    
+    .tw { animation: tw 4s ease-in-out infinite; }
+    @keyframes tw { 0%,100% { opacity: 1 } 50% { opacity: .15 } }
+    .gl { opacity: var(--o); animation: gl 5s ease-in-out infinite; }
+    @keyframes gl { 0%,100% { opacity: var(--o) } 50% { opacity: calc(var(--o) * .35) } }
+
     .in { animation: in .9s ease-out .2s both; }
     @keyframes in { from { opacity: 0 } to { opacity: 1 } }
-    .tw { animation: tw 4s ease-in-out infinite; }
-    @keyframes tw { 0%,100% { opacity: .9 } 50% { opacity: .2 } }
     @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
   </style>
   <rect x=".5" y=".5" width="579" height="169" rx="10" fill="#05070a" stroke="#30363d"/>
@@ -12,10 +16,13 @@
   <circle cx="18" cy="15" r="4.5" fill="none" stroke="#7d8590"/><circle cx="34" cy="15" r="4.5" fill="none" stroke="#7d8590"/><circle cx="50" cy="15" r="4.5" fill="none" stroke="#7d8590"/>
   <text x="290.0" y="19" text-anchor="middle" font-size="11" fill="#7d8590">~/projects/Infradeck</text>
   <text x="562" y="19" text-anchor="end" font-size="11" fill="#ff7b72">in development</text>
-  <circle cx="546" cy="58" r="1.1" fill="#e6edf3" opacity=".6"/><circle class="tw" cx="522" cy="74" r="1.4" fill="#e6edf3"/><circle cx="556" cy="88" r=".8" fill="#e6edf3" opacity=".4"/>
+  <circle class="gl" cx="214.0" cy="47.5" r="1.2" fill="#e6edf3" style="animation-delay:-1.78s;animation-duration:5.5s;--o:0.83"/><circle class="gl" cx="229.1" cy="59.3" r="1.0" fill="#e6edf3" style="animation-delay:-4.35s;animation-duration:5.6s;--o:0.87"/><circle class="tw" cx="314.6" cy="44.9" r="1.4" fill="#e6edf3" style="animation-delay:-4.25s;animation-duration:6.4s;--o:0.80"/><circle class="gl" cx="441.1" cy="82.9" r="0.5" fill="#e6edf3" style="animation-delay:-2.82s;animation-duration:5.1s;--o:0.71"/><circle class="tw" cx="435.6" cy="71.8" r="0.7" fill="#e6edf3" style="animation-delay:-4.21s;animation-duration:5.4s;--o:0.44"/><circle class="tw" cx="71.8" cy="40.7" r="0.8999999999999999" fill="#e6edf3" style="animation-delay:-1.70s;animation-duration:5.2s;--o:0.85"/><circle class="gl" cx="452.6" cy="48.6" r="0.6" fill="#e6edf3" style="animation-delay:-0.26s;animation-duration:4.8s;--o:0.84"/><circle class="gl" cx="312.9" cy="80.5" r="0.5" fill="#e6edf3" style="animation-delay:-4.68s;animation-duration:2.7s;--o:0.87"/><circle class="gl" cx="146.7" cy="46.3" r="1.0" fill="#e6edf3" style="animation-delay:-1.01s;animation-duration:3.5s;--o:0.63"/><circle class="tw" cx="13.6" cy="88.9" r="0.8999999999999999" fill="#e6edf3" style="animation-delay:-0.16s;animation-duration:5.9s;--o:0.82"/><circle class="gl" cx="355.9" cy="61.0" r="1.0" fill="#e6edf3" style="animation-delay:-5.50s;animation-duration:6.2s;--o:0.43"/><circle class="tw" cx="397.1" cy="58.3" r="0.8999999999999999" fill="#e6edf3" style="animation-delay:-4.10s;animation-duration:3.8s;--o:0.40"/><circle class="gl" cx="476.4" cy="67.5" r="0.8" fill="#e6edf3" style="animation-delay:-0.81s;animation-duration:6.2s;--o:0.64"/><circle class="gl" cx="252.9" cy="59.9" r="0.8" fill="#e6edf3" style="animation-delay:-3.66s;animation-duration:3.8s;--o:0.62"/><circle class="gl" cx="452.2" cy="113.7" r="1.2" fill="#e6edf3" style="animation-delay:-3.46s;animation-duration:6.0s;--o:0.71"/><circle class="gl" cx="391.2" cy="46.4" r="0.5" fill="#e6edf3" style="animation-delay:-2.36s;animation-duration:3.6s;--o:0.45"/><circle class="gl" cx="285.9" cy="64.9" r="1.0" fill="#e6edf3" style="animation-delay:-4.75s;animation-duration:5.2s;--o:0.90"/><circle class="gl" cx="53.5" cy="39.5" r="0.5" fill="#e6edf3" style="animation-delay:-0.98s;animation-duration:5.8s;--o:0.84"/><circle class="gl" cx="401.8" cy="45.4" r="0.6" fill="#e6edf3" style="animation-delay:-3.11s;animation-duration:3.6s;--o:0.42"/><circle class="tw" cx="325.0" cy="39.8" r="0.8" fill="#e6edf3" style="animation-delay:-1.05s;animation-duration:5.9s;--o:0.82"/><circle class="tw" cx="424.2" cy="81.2" r="0.8" fill="#e6edf3" style="animation-delay:-1.97s;animation-duration:3.9s;--o:0.77"/><circle class="gl" cx="117.5" cy="127.0" r="0.8" fill="#e6edf3" style="animation-delay:-2.88s;animation-duration:4.3s;--o:0.47"/><circle class="tw" cx="130.6" cy="41.7" r="0.8999999999999999" fill="#e6edf3" style="animation-delay:-4.93s;animation-duration:3.7s;--o:0.64"/><circle class="gl" cx="368.2" cy="67.0" r="0.8" fill="#e6edf3" style="animation-delay:-5.59s;animation-duration:5.3s;--o:0.65"/><circle class="gl" cx="396.1" cy="37.2" r="1.2" fill="#e6edf3" style="animation-delay:-4.17s;animation-duration:5.8s;--o:0.77"/><circle class="tw" cx="263.7" cy="48.9" r="0.8999999999999999" fill="#e6edf3" style="animation-delay:-1.88s;animation-duration:3.4s;--o:0.87"/>
+  <circle cx="514" cy="66" r="28" fill="none" stroke="#30363d"/><svg x="499" y="51" width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="10" fill="#0E0E11"/><rect x="20" y="8" width="16" height="12" fill="#F3F1EC"/><rect x="28" y="26" width="16" height="12" fill="#FF5A1F"/><rect x="20" y="44" width="16" height="12" fill="#F3F1EC"/>
+</svg>
   <g class="in">
     <text x="24" y="74" font-size="21" font-weight="700"><tspan fill="#ff7b72">❯ </tspan><tspan fill="#e6edf3">Infradeck</tspan></text>
-    <text x="24" y="100" font-size="13" fill="#7d8590">Self-hosted infrastructure monitoring with collectors,</text><text x="24" y="119" font-size="13" fill="#7d8590">alerts and an AI incident agent.</text>
+    <text x="24" y="100" font-size="13" fill="#7d8590">Self-hosted dashboard for monitoring homelab</text><text x="24" y="119" font-size="13" fill="#7d8590">machines, containers and uptime.</text>
     <line x1="24" y1="136" x2="556" y2="136" stroke="#30363d" stroke-dasharray="2 4"/>
     <text x="24" y="157" font-size="12" fill="#7d8590">private repo</text><text x="556" y="157" font-size="12" fill="#ff7b72" text-anchor="end"><tspan class="tw">●</tspan> status: coming soon</text>
   </g>
