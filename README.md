@@ -1,49 +1,99 @@
-### Welcome to my GitHub Profile!
+<!-- Banner: animated SVG stored in this repo (assets/), so it never breaks. -->
+<p align="center">
+  <img src="./assets/space-banner.svg" alt="karlo@fer:~$ whoami — Karlo Kajba Šimanić, CS student @ FER Zagreb, exploring AI security" width="100%"/>
+</p>
 
-👋 Hi there! I'm Karlo, a passionate Computer Science student with a love for exploring and experimenting with different technologies. I'm always excited to learn new things, dive into coding challenges, and bring ideas to life through creative projects.
-
-💻 Karlo | CS Student & Aspiring Software Developer
-🌱 Learning: Always exploring new technologies, currently working with Flutter, Firebase, Dart, and FastAPI to build dynamic cross-platform mobile apps .
-🚀 Skills: Proficient in multiple technologies such as Python, Flutter, Dart, FastAPI... Passionate about problem-solving and creating impactful projects.
-🎯 Goals: Aspiring to contribute to open-source and develop innovative, user-centric solutions.
-⚡ Fun Fact: When I’m not coding... Well, I'm always coding.
-
----
-
-### GitHub Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=karloks2005&show_icons=true&theme=tokyonight)
-
-### Top Languages
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=karloks2005&layout=compact&theme=tokyonight)
+<p align="center">
+  <a href="https://nulldev.info/blog/karlo_kajba_simanic"><img src="https://img.shields.io/badge/blog-nulldev.info-0d1117?style=for-the-badge&logo=rss&logoColor=ff7b72" alt="Blog"/></a>
+  <a href="mailto:karlo.kajba-simanic@fer.unizg.hr"><img src="https://img.shields.io/badge/mail-contact-0d1117?style=for-the-badge&logo=minutemailer&logoColor=ff7b72" alt="Email"/></a>
+  <img src="https://komarev.com/ghpvc/?username=karloks2005&style=for-the-badge&color=0d1117&label=visitors" alt="Profile views"/>
+</p>
 
 ---
 
-### Technologies & Tools
+### `~/about`
 
-![Flutter](https://img.shields.io/badge/-Flutter-blue?style=flat-square&logo=flutter&logoColor=white)
-![Dart](https://img.shields.io/badge/-Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-FFD43B?style=flat-square&logo=python&logoColor=blue)
-![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
-![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?style=flat-square&logo=javascript&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/-Git-orange?style=flat-square&logo=git&logoColor=white)
-![Figma](https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
-![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=white)
+```yaml
+base:      FER Zagreb — Computer Science
+mission:   exploring the roads of AI security
+systems:   Flutter · Dart · Firebase · FastAPI · Python
+goal:      open source & user-centric software
+off_duty:  reading about space (or still coding)
+```
 
 ---
 
-### Developer Quote
+### `~/projects`
 
-> "Code is like humor. When you have to explain it, it’s bad." — _Cory House_
+<!-- Cards are generated from .github/featured.json by .github/workflows/star-heatmap.yml. Edit the JSON, not this block. -->
+<!-- FEATURED:START -->
+<p>
+  <img src="./assets/projects/infradeck.svg" alt="Infradeck" width="49%"/>
+  <a href="https://github.com/karloks2005/jailbreaklab"><img src="./assets/projects/jailbreaklab.svg" alt="JailbreakLab" width="49%"/></a>
+</p>
+<!-- FEATURED:END -->
 
 ---
 
-### Visitor Count
+### `~/stack`
 
-![Visitor Badge](https://komarev.com/ghpvc/?username=karloks2005&color=blue)
+<p>
+  <img src="https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=e6edf3" alt="Python"/>
+  <img src="https://img.shields.io/badge/Flutter-0d1117?style=for-the-badge&logo=flutter&logoColor=e6edf3" alt="Flutter"/>
+  <img src="https://img.shields.io/badge/Dart-0d1117?style=for-the-badge&logo=dart&logoColor=e6edf3" alt="Dart"/>
+  <img src="https://img.shields.io/badge/FastAPI-0d1117?style=for-the-badge&logo=fastapi&logoColor=e6edf3" alt="FastAPI"/>
+  <img src="https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=e6edf3" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/Firebase-0d1117?style=for-the-badge&logo=firebase&logoColor=e6edf3" alt="Firebase"/>
+  <img src="https://img.shields.io/badge/MySQL-0d1117?style=for-the-badge&logo=mysql&logoColor=e6edf3" alt="MySQL"/>
+  <img src="https://img.shields.io/badge/Docker-0d1117?style=for-the-badge&logo=docker&logoColor=e6edf3" alt="Docker"/>
+  <img src="https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=e6edf3" alt="Git"/>
+  <img src="https://img.shields.io/badge/Figma-0d1117?style=for-the-badge&logo=figma&logoColor=e6edf3" alt="Figma"/>
+</p>
 
 ---
 
+### `~/telemetry`
+
+<!-- Cards are generated daily by .github/workflows/profile-summary-cards.yml and stored in this repo, so they never break. -->
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/github_dark/0-profile-details.svg">
+  <img src="./profile-summary-card-output/default/0-profile-details.svg" alt="Profile details" width="100%"/>
+</picture>
+
+<p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/github_dark/3-stats.svg">
+    <img src="./profile-summary-card-output/default/3-stats.svg" alt="Stats" width="49%"/>
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/github_dark/2-most-commit-language.svg">
+    <img src="./profile-summary-card-output/default/2-most-commit-language.svg" alt="Top languages by commit" width="49%"/>
+  </picture>
+</p>
+
+<p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/github_dark/1-repos-per-language.svg">
+    <img src="./profile-summary-card-output/default/1-repos-per-language.svg" alt="Repos per language" width="49%"/>
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/github_dark/4-productive-time.svg">
+    <img src="./profile-summary-card-output/default/4-productive-time.svg" alt="Productive time" width="49%"/>
+  </picture>
+</p>
+
+---
+
+### `~/contributions`
+
+<!-- Star map of the contribution calendar, re-rendered every hour by .github/workflows/star-heatmap.yml -->
+<img src="./assets/star-heatmap.svg" alt="Contribution calendar rendered as a star map" width="100%"/>
+
+---
+
+<p align="center"><code>"Code is like humor. When you have to explain it, it's bad." — Cory House</code></p>
+
+<p align="center">
+  <img src="./assets/space-footer.svg" alt="Thanks for visiting – see you among the stars" width="100%"/>
+</p>
