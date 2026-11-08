@@ -29,7 +29,7 @@ off_duty:  reading about space (or still coding)
 <!-- FEATURED:START -->
 <p>
   <img src="./assets/projects/infradeck.svg" alt="Infradeck" width="49%"/>
-  <a href="https://github.com/karloks2005/jailbreaklab"><img src="./assets/projects/jailbreaklab.svg" alt="JailbreakLab" width="49%"/></a>
+  <a href="https://github.com/karloks2005/JailbreakLab"><img src="./assets/projects/JailbreakLab.svg" alt="JailbreakLab" width="49%"/></a>
 </p>
 <!-- FEATURED:END -->
 
