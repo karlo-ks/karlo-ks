@@ -81,11 +81,11 @@ def starfield(w, h, n, seed, keep_out):
         if any(a < x < c and b < y < d for a, b, c, d in keep_out):
             continue
         rad = r.choice([0.5, 0.6, 0.7, 0.8, 1.0, 1.2])
-        if r.random() < 0.15:
-            out.append(f'<circle class="tw" cx="{x:.1f}" cy="{y:.1f}" r="{rad + .2}" fill="{FG}" '
-                       f'style="animation-delay:{r.uniform(0, 5):.2f}s;animation-duration:{r.uniform(3, 6):.1f}s"/>')
-        else:
-            out.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{rad}" fill="{FG}" opacity="{r.uniform(.25, .85):.2f}"/>')
+        # every star shimmers: a third twinkle strongly, the rest glow softly, all out of sync
+        cls = "tw" if r.random() < 0.33 else "gl"
+        out.append(f'<circle class="{cls}" cx="{x:.1f}" cy="{y:.1f}" r="{rad + (.2 if cls == "tw" else 0)}" fill="{FG}" '
+                   f'style="animation-delay:-{r.uniform(0, 6):.2f}s;animation-duration:{r.uniform(2.5, 6.5):.1f}s;'
+                   f'--o:{r.uniform(.35, .9):.2f}"/>')
     return "".join(out)
 
 
@@ -115,7 +115,9 @@ def render() -> str:
     .f {{ animation: f .9s ease-out both; }}
     @keyframes f {{ from {{ opacity: 0 }} to {{ opacity: 1 }} }}
     .tw {{ animation: tw 4s ease-in-out infinite; }}
-    @keyframes tw {{ 0%,100% {{ opacity: 1 }} 50% {{ opacity: .2 }} }}
+    @keyframes tw {{ 0%,100% {{ opacity: 1 }} 50% {{ opacity: .15 }} }}
+    .gl {{ opacity: var(--o); animation: gl 5s ease-in-out infinite; }}
+    @keyframes gl {{ 0%,100% {{ opacity: var(--o) }} 50% {{ opacity: calc(var(--o) * .35) }} }}
     .cursor {{ animation: blink 1.1s step-end infinite; }}
     .m1 {{ animation: m1 9s linear 2s infinite; opacity: 0; }}
     .m2 {{ animation: m2 13s linear 6s infinite; opacity: 0; }}
