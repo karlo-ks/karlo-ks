@@ -17,7 +17,7 @@ A repo that is private or does not exist yet is shown as a "coming soon" card
 (needs "description"; optional "language"), and becomes a normal card once public.
 Optional "note" is a short label shown in the card's title bar.
 Optional "logo" is a path to an .svg/.png in this repo (e.g. assets/logos/x.svg);
-SVG logos drawn with currentColor take the accent colour.
+Logos are embedded exactly as they are (original colours, no recolouring).
 Optional "title" is the exact project name to display (capitalisation kept);
 without it the repository name from GitHub is used as-is.
 
@@ -78,8 +78,8 @@ def logo_svg(path: str, x: float, y: float, size: float) -> str:
     if path.lower().endswith(".svg"):
         src = open(path).read()
         src = re.sub(r"<\?xml[^>]*>|<!DOCTYPE[^>]*>", "", src).strip()
-        # place the logo's own <svg> at x/y with a fixed size; currentColor -> accent
-        src = re.sub(r"<svg\b", f'<svg x="{x}" y="{y}" width="{size}" height="{size}" color="{ACC}"', src, count=1)
+        # place the logo's own <svg> at x/y with a fixed size; its design and colours stay untouched
+        src = re.sub(r"<svg\b", f'<svg x="{x}" y="{y}" width="{size}" height="{size}"', src, count=1)
         src = re.sub(r'(<svg[^>]*?)\s(width|height)="[^"]*"(?=[^>]*\bx=)', r"\1", src, count=2)
         return src
     mime = "image/png" if path.lower().endswith(".png") else "image/jpeg"
