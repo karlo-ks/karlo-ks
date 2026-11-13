@@ -23,7 +23,7 @@
 <!-- Cards are generated from .github/featured.json by .github/workflows/star-heatmap.yml. Edit the JSON, not this block. -->
 <!-- FEATURED:START -->
 <p>
-  <img src="./assets/projects/infradeck.svg" alt="Infradeck" width="49%"/>
+  <a href="https://github.com/karloks2005/Infradeck"><img src="./assets/projects/Infradeck.svg" alt="Infradeck" width="49%"/></a>
   <a href="https://github.com/karloks2005/JailbreakLab"><img src="./assets/projects/JailbreakLab.svg" alt="JailbreakLab" width="49%"/></a>
 </p>
 <!-- FEATURED:END -->
