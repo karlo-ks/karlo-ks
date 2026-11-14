@@ -24,6 +24,6 @@
     <text x="24" y="74" font-size="21" font-weight="700"><tspan fill="#ff7b72">❯ </tspan><tspan fill="#e6edf3">Infradeck</tspan></text>
     <text x="24" y="100" font-size="13" fill="#7d8590">Self-hosted dashboard for monitoring homelab</text><text x="24" y="119" font-size="13" fill="#7d8590">machines, containers and uptime.</text>
     <line x1="24" y1="136" x2="556" y2="136" stroke="#30363d" stroke-dasharray="2 4"/>
-    <text x="24" y="157" font-size="12" fill="#7d8590"><tspan fill="#ff7b72">●</tspan> Python    ★ 5    ⑂ 0</text><text x="556" y="157" font-size="12" fill="#7d8590" text-anchor="end">updated 1d ago</text>
+    <text x="24" y="157" font-size="12" fill="#7d8590"><tspan fill="#ff7b72">●</tspan> Python    ★ 5    ⑂ 0</text><text x="556" y="157" font-size="12" fill="#7d8590" text-anchor="end">updated 2d ago</text>
   </g>
 </svg>
